@@ -1,6 +1,5 @@
 const axios = require('axios');
-
-const API_KEY = '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'; // Replace with your API key
+require('dotenv').config();
 
 exports.generateRecipe = async (req, res) => {
   try {
@@ -30,7 +29,7 @@ exports.generateRecipe = async (req, res) => {
     }, {
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${API_KEY}`,
+        'Authorization': `Bearer ${process.env.API_KEY}`,
       },
     });
 
