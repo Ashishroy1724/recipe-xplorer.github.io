@@ -54,7 +54,7 @@ export default function Header() {
           <Link to='/' className='nav-link'>
             <li className='hidden sm:inline text-white'>Home</li>
           </Link>
-          <Link to='/about' className='nav-link'>
+          <Link to='/recipe-generator' className='nav-link'>
             <li className='hidden sm:inline text-white'>About</li>
           </Link>
           <Link to='/profile'>

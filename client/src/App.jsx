@@ -5,6 +5,7 @@ import SignUp from "./pages/SignUp";
 import About from "./pages/About";
 import Profile from "./pages/Profile";
 import Header from "./components/Header";
+import RecipeGenerator from "./components/RecipeGenerator";
 import PrivateRoute from "./components/privateRoute";
 import CreateListing from "./pages/CreateListing";
 import UpdateListing from "./pages/UpdateListing";
@@ -20,6 +21,7 @@ export default function App() {
     <Route path="/sign-up" element={<SignUp />} />
     <Route path="/about" element={<About />} />
     <Route path="/search" element={<Search />} />
+    <Route path="/recipe-generator" element={<RecipeGenerator />} />
     <Route path="/listing/:listingId" element={<Listing />} />
     <Route element={<PrivateRoute/>}>
     <Route path="/profile" element={<Profile />} />
